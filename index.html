@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"> 
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    #container{
+        height:1550px;
+        width: 1000px;
+        border: 3px dashed blue;
+        font-size: 19px;
+        background-color: rgb(236, 236, 111);
+        margin-left: 200px;
+        padding:15px;
+    }
+</style>
+<body>
+    <div id="container">
+        <h2 style="text-align:center; color:brown; text-decoration: underline;">CSS INTERVIEW Q/A DAY-1</h2>
+        <b>1.Difference between Flex-Row and Flex-Column:</b>
+        <p>In CSS,Flex box has a property called flex-direction.there are 4 possible values for flex-direction:row,row-reverse,column,column-reverse.<br>flex-row: When we choose flex-row, then all child items will be placed in horizantal manner.By default all child items are placed in horizantal manner only.<br>
+        flex-column:when we choose column, then all child items will be placed in vertical manner.</p>
+            <div id="flex-container">
+                (i) flex-direction:row;&nbsp;
+                <div id="box1"></div>&nbsp;&nbsp;
+                <div id="box2"></div>&nbsp;&nbsp;
+                <div id="box3"></div>&nbsp;&nbsp;
+                <div id="box4"></div>
+            </div>
+            <div id="flex-container2">
+                (ii) flex-direction:column;
+                <div id="box1"></div>&nbsp;&nbsp;
+                <div id="box2"></div>&nbsp;&nbsp;
+                <div id="box3"></div>&nbsp;&nbsp;
+                <div id="box4"></div>
+            </div>
+        <hr>
+        <b>2.Inline,Internal,External CSS:</b>
+        <p>Inline CSS: Inline css requires the style attribute placed inside an html element i.e..in opening tag.<br>
+            Internal CSS: Internal css requires the style element placed inside the head section of a HTML file.<br>
+            External CSS: External css as name says,an external .css file is created and the file is linked to .html file. It requires the link element placed inside the head section of an HTML file. 
+            <span style="background-color:tomato;">Inline CSS</span>   
+        </p>
+        <hr>
+        <b>3.Justify-Content:</b>
+        <p>In CSS, Justify-Content property defines how the browser distributes the space between and around the content items along the main axis of the flex container and inline axis of a grid container.</p>
+        <hr>
+        <b>4.Difference between relative and absolute Positioning:</b>
+        <p>position:relative; works based on its current position without changing the layout.i.e..,places an element relative to its current position.<br><br>Position:absolute; works based on its parent's position.It changes its position according to parent position.i.e..,places an element relative to its parent position and changing the layout around it.</p>
+        <hr>
+        <b>5.grid-template-column:</b>
+        <p>In grids we have a property called grid-template-column.It specifies the number of columns(i.e.,No.of widths) in a grid container/layout.It takes values in pixels(px),percentages(%),fractions(fr)etc..</p>
+        <hr>
+        <b>6.z-index:</b>
+        <p>In CSS,z-index is a property that is used to determine the stack level of an elemnet.Elements having higher index value will be placed on the top of the element having lower index value.It takes values in positive as well as in negative.It sets the order of a positioned element and its items. Large z-index value covers/overlaps with the lower z-index value.<br>
+        Note:- z-index will only works on an element whose position is set to either relative,absolute,fixed.</p>
+        <div id="box-1"></div>
+        <div id="box-2"></div>
+        <hr>
+        <b>7.Difference between margin and padding:</b>
+        <p>In CSS, margin is the space around an element's border,while padding is the space between an element's border and element's content.Margin property controls the space outside an element and the padding property controls the space inside an element.</p>
+    </div>
+</body>
+</html>
